@@ -4,6 +4,17 @@ import X from '../assets/x-icon.png';
 import Instagram from '../assets/instagram-icon.png';
 import Banner from '../assets/banner.png';
 const Footer = () => {
+  /**
+ * Footer Component
+ *
+ * This component renders the footer section of the website.
+ * It includes:
+ * - A background image for styling.
+ * - Company branding and description.
+ * - Social media icons for LinkedIn, Instagram, and X (Twitter).
+ * - A copyright notice.
+ * - A fun tagline mentioning it was "Made on Earth by humans."
+ */
   return (
     <footer className="relative  text-white py-10 px-6" style={{ backgroundImage: `url(${Banner})` }}
     >
