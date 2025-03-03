@@ -42,9 +42,9 @@ const PriceList = () => {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`relative bg-gray-900 p-6 rounded-lg border ${
-              index === 1 ? "border-purple-500 shadow-lg shadow-purple-500/50" : "border-gray-700"
-            } text-center`}
+            className={`relative p-6 rounded-lg border flex flex-col h-full text-center
+              ${index === 1 ? "border-purple-500 shadow-lg shadow-purple-500/50" : "border-gray-700"}
+              bg-[radial-gradient(53.61%_29.47%_at_13.52%_10.21%,_#241C36_0%,_#0D0A17_100%)]`}
           >
             {/* Top Section */}
             <h3 className="text-xl font-bold">{plan.name}</h3>
@@ -52,12 +52,10 @@ const PriceList = () => {
               {plan.users}
             </span>
             <p className="text-gray-400 text-sm mt-3">{plan.description}</p>
-            
             {/* Divider */}
-            <div className="w-full border-t border-gray-700 my-4"></div>
-
+            <div className="w-full h-[1px] my-4 bg-gradient-to-r from-[#545454] via-[#A68BEE] to-[#1A1A3B]"></div>
             {/* Feature List */}
-            <ul className="text-gray-300 my-6 space-y-3 text-left">
+            <ul className="text-gray-300 my-6 space-y-3 text-left flex-grow">
               {plan.features.map((feature, i) => (
                 <li key={i} className="flex items-center space-x-3">
                   <div className="bg-blue-500 text-white p-2 w-7 h-7 flex items-center justify-center rounded-md">
@@ -70,23 +68,21 @@ const PriceList = () => {
 
             {/* Special case for "Gen AI Report" */}
             {!plan.includesGenAI && (
-              <div className="border-t border-gray-700 my-4 pt-4">
-                <ul>
-                  <li className="flex items-center space-x-3 text-gray-500">
-                    <div className="bg-gray-600 text-white p-2 w-7 h-7 flex items-center justify-center rounded-md">
-                      <AiOutlineClose className="w-5 h-5" />
-                    </div>
-                    <span>Gen AI Report</span>
-                  </li>
-                </ul>
-              </div>
+              <ul>
+                <li className="flex items-center space-x-3 text-gray-500">
+                  <div className="bg-gray-600 text-white p-2 w-7 h-7 flex items-center justify-center rounded-md">
+                    <AiOutlineClose className="w-5 h-5" />
+                  </div>
+                  <span>Gen AI Report</span>
+                </li>
+              </ul>
             )}
 
             {/* Pricing */}
-            <p className="text-2xl font-bold">{plan.price[billingCycle]}</p>
+            <p className="text-2xl font-bold mt-auto">{plan.price[billingCycle]}</p>
             <p className="text-sm text-gray-400">/ per month</p>
 
-            {/* Get Started Button */}
+            {/* Get Started Button - Aligned at the Bottom */}
             <Button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg w-full" btnText="Get Started" />
           </div>
         ))}

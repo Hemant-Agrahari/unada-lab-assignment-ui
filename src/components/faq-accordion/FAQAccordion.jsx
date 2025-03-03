@@ -26,7 +26,7 @@ const FAQAccordion = ({ title, description, faqs }) => {
       [question]: !prev[question], // Open the clicked FAQ, close others
     }));
   };
-  
+
   return (
     <div className="text-white px-6 py-16 flex flex-col items-center">
       {title && <h2 className="text-4xl font-bold text-center mb-4">{title}</h2>}
@@ -34,12 +34,11 @@ const FAQAccordion = ({ title, description, faqs }) => {
 
       <div className="w-full max-w-3xl">
         {faqs.map((faq) => (
-          <div
-            key={faq.question}
-            className={`bg-[#18142b] rounded-lg mb-4 overflow-hidden transition-all duration-300 shadow-lg ${
-              openFaqs[faq.question] ? "border border-purple-500 shadow-purple-500/40" : ""
-            }`}
-          >
+       <div
+       key={faq.question}
+       className={`relative rounded-lg mb-4 overflow-hidden transition-all duration-300 shadow-lg 
+         border border-gray-600 bg-[radial-gradient(23.18%_162.56%_at_2.44%_15.49%,_#241C36_0%,_#0C0512_100%)]`}
+     >
             <button
               className="w-full text-left px-6 py-4 flex justify-between items-center text-lg font-medium transition-all duration-300 hover:bg-[#211a3b] cursor-pointer"
               onClick={() => toggleFAQ(faq.question)}

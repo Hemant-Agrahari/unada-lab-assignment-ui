@@ -42,7 +42,7 @@ const Service = () => {
         <Card
           imgSrc={IntelligenceTarget}
           title="Intelligent Targeting"
-          description="Focus on analyzing your direct competitors for valuable insights and strategies."
+          description="From entering your site address to full setup, it’s all done in just 60 seconds—no waiting around."
         />
       </div>
     </>
