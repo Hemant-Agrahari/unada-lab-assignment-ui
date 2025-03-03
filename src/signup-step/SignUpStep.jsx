@@ -11,7 +11,7 @@ import Button from "../components/button/Button";
  */
 const SignupSteps = () => {
   return (
-    <div className="min-h-screen bg-black text-white px-6 md:px-12 py-12 flex flex-col items-center">
+    <div className="bg-black text-white px-6 md:px-12 py-12 flex flex-col items-center">
       <div className="max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="relative w-full flex justify-center">
           <img
