@@ -1,7 +1,9 @@
 import Button from "../components/button/Button";
+import Banner from '../assets/banner.png';
 const HeroSection = () => {
     return (
-        <div className="relative w-full min-h-[80vh] flex flex-col items-center justify-center text-center bg-black text-white px-6">
+        <div className="relative w-full min-h-[80vh] flex flex-col items-center justify-center text-center bg-black text-white px-6" style={{ backgroundImage: `url(${Banner})` }}
+            >
             <div className="absolute inset-0 bg-[url('/grid-pattern.png')] opacity-20"></div>
             <div className="relative z-10">
                 <div className="inline-flex items-center px-4 py-1 bg-gray-800 text-xs text-white rounded-full mb-4">

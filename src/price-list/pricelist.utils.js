@@ -2,6 +2,7 @@ export const plans = [
     {
       name: "Basic",
       users: "Individual",
+      description: "Essential features for startups and small teams.",
       features: [
         "30+ Features",
         "Priority Support",
@@ -15,13 +16,14 @@ export const plans = [
     {
       name: "Standard",
       users: "2 to 10 Users",
+      description: "Advanced tools for scaling and growing businesses.",
       features: [
         "Access 80+ Enterprise Features",
         "Priority Support",
         "10 Team Members",
         "Premium Features",
         "Unlimited Data Insights",
-        "Get Ai Report"
+        "Get AI Report",
       ],
       price: { monthly: "$69.99", yearly: "$699.99" },
       includesGenAI: true,
@@ -29,6 +31,7 @@ export const plans = [
     {
       name: "Enterprise",
       users: "10+ Users",
+      description: "Full customization and premium support for large organizations.",
       features: [
         "Access All Features",
         "Priority Support",
@@ -41,3 +44,4 @@ export const plans = [
       includesGenAI: true,
     },
   ];
+  

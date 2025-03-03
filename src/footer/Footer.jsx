@@ -1,10 +1,12 @@
 import React from "react";
-import Linkedln from  '../assets/linkedln-icon.png';
-import X from  '../assets/x-icon.png';
-import Instagram from  '../assets/instagram-icon.png';
-const Footer = () =>{
+import Linkedln from '../assets/linkedln-icon.png';
+import X from '../assets/x-icon.png';
+import Instagram from '../assets/instagram-icon.png';
+import Banner from '../assets/banner.png';
+const Footer = () => {
   return (
-    <footer className="relative  text-white py-10 px-6">
+    <footer className="relative  text-white py-10 px-6" style={{ backgroundImage: `url(${Banner})` }}
+    >
       <div className="absolute inset-0  bg-cover bg-center opacity-20"></div>
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="text-left">
