@@ -1,9 +1,14 @@
-import img1 from "../assets/real-time-update.png";
 import Button from "../components/button/Button";
 import Card from "../components/card/Card";
 import Detection from '../assets/detection.png';
 import PowerAi from '../assets/power-by-ai.png';
 import Tracking from '../assets/tracking.png'
+/**
+ * SmartIndicators Component
+ * 
+ * This component showcases AI-powered indicators to help users quickly identify and address issues.
+ * It consists of a heading, description, a CTA button, and a set of informative cards.
+ */
  const SmartIndicators =()=> {
     return (
         <div className="min-h-screen bg-black text-white px-8 py-12 flex items-center">

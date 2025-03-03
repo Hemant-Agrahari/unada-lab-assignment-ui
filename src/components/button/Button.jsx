@@ -1,3 +1,12 @@
+/**
+ * Button Component
+ * 
+ * This component renders a customizable button with gradient styling.
+ * 
+ * Props:
+ * - btnText (string): The text to display inside the button.
+ * - className (string, optional): Additional classes for styling customization.
+ */
 const Button = ({ btnText,className}) => {
     return (
       <button

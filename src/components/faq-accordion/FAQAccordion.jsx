@@ -1,6 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
+/**
+ * FAQAccordion Component
+ * 
+ * This component displays a list of FAQs in an accordion format.
+ * Users can toggle each question to reveal or hide the answer.
+ * 
+ * Props:
+ * - title (string): The main heading of the FAQ section.
+ * - description (string): A brief description or subtitle for the FAQ section.
+ * - faqs (array): An array of objects containing:
+ *    - question (string): The FAQ question.
+ *    - answer (string): The FAQ answer.
+ */
 const FAQAccordion = ({ title, description, faqs }) => {
   const [openFaqs, setOpenFaqs] = useState({}); // Store open/closed state for each FAQ
 
@@ -14,9 +27,8 @@ const FAQAccordion = ({ title, description, faqs }) => {
     }));
   };
   
-
   return (
-    <div className="min-h-screen text-white px-6 py-16 flex flex-col items-center">
+    <div className="text-white px-6 py-16 flex flex-col items-center">
       {title && <h2 className="text-4xl font-bold text-center mb-4">{title}</h2>}
       {description && <p className="text-gray-400 text-center max-w-2xl mb-8">{description}</p>}
 

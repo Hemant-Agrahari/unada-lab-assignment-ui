@@ -1,5 +1,4 @@
 import Button from "../components/button/Button";
-
 const HeroSection = () => {
     return (
         <div className="relative w-full min-h-[80vh] flex flex-col items-center justify-center text-center bg-black text-white px-6">
@@ -15,7 +14,7 @@ const HeroSection = () => {
                 <p className="text-gray-400 text-lg mb-6">
                     Discover what drives results and what doesn’t to boost your search traffic.
                 </p>
-                <Button btnText='    Take Free Trial' />
+                <Button btnText='Take Free Trial' />
             </div>
         </div>
     );
