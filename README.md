@@ -1,12 +1,26 @@
-# React + Vite
+📌 Pricing Plan UI
+A modern and fully responsive pricing plan UI built with React and Tailwind CSS. This project offers dynamic pricing options with gradient backgrounds, animated hover effects, and a seamless toggle between billing cycles.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+🌟 Responsive Design – Fully optimized for all screen sizes.
+🎨 Beautiful UI – Custom gradients and shadows for a modern look.
+🔥 Billing Toggle – Switch between Monthly & Yearly plans.
+✅ Feature Checklist – Clear feature breakdown per plan.
+✨ Custom Gradient Divider – Enhancing visual appeal.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠 Technologies Used
+React.js – Frontend framework
+Tailwind CSS – Styling & layout
+React Icons – For feature indicators
+Vite (optional) – Fast development build
 
-## Expanding the ESLint configuration
+Installation & Setup
+git clone https://github.com/Hemant-Agrahari/unada-lab-assignment-ui
+npm install
+npm start
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+📞Contact
+👤 Hemant Kumar Agrahari
+📧 hemantkagrahari@gmail.com
